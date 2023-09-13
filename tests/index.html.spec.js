@@ -22,7 +22,7 @@ test.describe("index.html", () => {
     );
   });
 
-  test("deve ter o lang em pt no html", async ({ page }) => {
+  test("deve ter o lang em pt no html", asygitnc ({ page }) => {
     await page.goto(`file://${process.cwd()}/index.html`);
     await expect(page.locator("html")).toHaveAttribute("lang", "pt");
   });
